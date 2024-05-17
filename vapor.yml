@@ -2,6 +2,7 @@ id: 61505
 name: chromacatcha
 environments:
     production:
+        database: chromacatcha-db
         memory: 1024
         cli-memory: 512
         runtime: 'php-8.2:al2'
