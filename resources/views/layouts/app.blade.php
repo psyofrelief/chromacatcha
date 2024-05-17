@@ -9,8 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link href="{{ mix('public/build/assets/app-CBTPaFpW.css') }}" rel="stylesheet">
-    <script src="{{ mix('public/build/assets/app-DkDdL2UM.js') }}" defer></script>
 
 </head>
 
