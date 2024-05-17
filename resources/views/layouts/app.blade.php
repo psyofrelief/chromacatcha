@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link href="{{ mix('public/css/app.css') }}" rel="stylesheet">
-     
+    <link href="{{ asset('build/assets/app-Cv6u1ppF.css') }}" rel="stylesheet">
+    <script src="{{ asset('build/assets/CnDmymIq.js') }}" defer></script>
 
 </head>
 
