@@ -13,7 +13,7 @@
     <script src="{{ asset('build/assets/CnDmymIq.js') }}" defer></script>
 </head>
 
-<body class="min-h-screen flex flex-col text-center ">
+<body class="min-h-screen flex flex-col text-center font-spaceMono">
 
     <x-navbar />
 
