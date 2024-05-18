@@ -6,7 +6,7 @@
 ![DaisyUI](https://img.shields.io/badge/daisyui-5A0EF8?style=for-the-badge&logo=daisyui&logoColor=white)
 ![Emacs](https://img.shields.io/badge/Emacs-%237F5AB6.svg?&style=for-the-badge&logo=gnu-emacs&logoColor=white)
 
-Explore the live demo at [ChromaCatcha Demo](https://billowing-tokyo-80yqaltndrll.vapor-farm-f1.com/)
+Explore the live demo at [ChromaCatcha Demo](https://colorful-summer-v3zkkzqoosfu.vapor-farm-d1.com/)
 
 ## About this project
 The web application ChromaCatcha was developed using Tailwind CSS, PHP, and Laravel. By parsing its CSS files, it enables users to extract colors from a given URL. After that, users can view the retrieved colors in HEX or RGB formats. 
