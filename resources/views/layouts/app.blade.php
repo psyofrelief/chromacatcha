@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href="{{ asset('build/assets/app-DPsmAb3R.css') }}" rel="stylesheet">
-    <script src="{{ asset('build/assets/app-DkDdL2UM.js') }}" defer></script>
+    <script src="{{ asset('build/assets/app-BuF5rfZ9.js') }}" defer></script>
 </head>
 
 <body class="min-h-screen flex flex-col relative text-center font-spaceMono">
