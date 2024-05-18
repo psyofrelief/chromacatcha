@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-theme="cyberpunk" lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
     <meta charset="utf-8">
@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link href="{{ asset('build/assets/app-Cmo-ENQ3.css') }}" rel="stylesheet">
-    <script src="{{ asset('build/assets/app-BzV42Vkw.js') }}" defer></script>
+    <link href="{{ asset('build/assets/app-18g5PMMB.css') }}" rel="stylesheet">
+    <script src="{{ asset('build/assets/app-CTu84iEe.js') }}" defer></script>
 </head>
 
 <body class="min-h-screen flex flex-col relative text-center font-spaceMono">
