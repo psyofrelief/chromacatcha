@@ -9,6 +9,7 @@ $url = session('url');
 
 @section('content')
 <main class="flex flex-col flex-1 px-3 justify-center align-center relative">
+
     @isset($colors)
     <form id="colors-form" method="POST" action="/colors">
         @csrf
@@ -24,10 +25,13 @@ $url = session('url');
 @section('scripts')
 <script>
     // Add an event listener to the <p> tag
-    document.getElementById('submit-colors').addEventListener('click', function() {
-        // Submit the form when the <p> tag is clicked
-        document.getElementById('colors-form').submit();
-    });
+    const submitBtn = document.getElementById('submit-colors');
+    if (submitBtn) {
+        submitBtn.addEventListener('click', function() {
+            // Submit the form when the <p> tag is clicked
+            document.getElementById('colors-form').submit();
+        });
+    }
 </script>
 
 @endsection

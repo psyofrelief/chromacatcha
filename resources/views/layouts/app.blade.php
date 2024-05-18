@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html data-theme="cyberpunk" lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
     <meta charset="utf-8">
@@ -9,17 +9,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link href="{{ asset('build/assets/app-Cv6u1ppF.css') }}" rel="stylesheet">
-    <script src="{{ asset('build/assets/CnDmymIq.js') }}" defer></script>
+    <link href="{{ asset('build/assets/app-Cmo-ENQ3.css') }}" rel="stylesheet">
+    <script src="{{ asset('build/assets/app-BzV42Vkw.js') }}" defer></script>
 </head>
 
-<body class="min-h-screen flex flex-col text-center font-spaceMono">
+<body class="min-h-screen flex flex-col relative text-center font-spaceMono">
 
+    <img alt="cloud bg" style="position: absolute; bottom: 0; width: 100%; z-index: -1;" src="{{ asset('img/cloud-bg.svg')}}" />
     <x-navbar />
 
     @yield('content')
+
     <x-footer />
+
     @yield('scripts')
+
 </body>
 
 </html>

@@ -73,11 +73,11 @@ function getContrastingTextColor($backgroundColor)
     <form method="POST" class="flex flex-col-reverse" action="{{ url('/colors') }}">
         @csrf
         <div class="flex mx-auto gap-1">
-            <input type="submit" name="convertToRgba" value="Convert to RGB" formaction="{{ url('/colors/rgba') }}" class="btn btn-xs mb-1 btn-accent sm:btn-sm" />
-            <input type="submit" name="convertToHex" value="Convert to HEX" formaction="{{ url('/colors/hex') }}" class="btn btn-xs btn-secondary sm:btn-sm" />
+            <input type="submit" name="convertToRgba" value="Convert to RGB" formaction="{{ url('/colors/rgba') }}" class="btn btn-xs mb-1 btn-accent border border-neutral border-4 sm:btn-sm" />
+            <input type="submit" name="convertToHex" value="Convert to HEX" formaction="{{ url('/colors/hex') }}" class="btn btn-xs btn-secondary sm:btn-sm border border-neutral border-4" />
 
         </div>
-        <a href="/" class="btn btn-xs text-xx mb-2 mr-auto sm:text-sm"><img alt="" src="{{ asset('/icons/back.svg') }}" />Back</a>
+        <a href="/" class="btn btn-xs text-xx mb-2 mr-auto sm:text-sm"><img alt="back icon" src="{{ asset('/icons/back.svg') }}" />Back</a>
     </form>
 
     <p class="my-4 text-xs sm:text-md">
@@ -93,21 +93,24 @@ function getContrastingTextColor($backgroundColor)
     <ul class="flex flex-col align-center">
         @isset($colors)
         @foreach ($colors as $color)
-        @if (strlen($color) < 5) @php $color=expandHexColor($color); @endphp @endif <li style="background-color: {{ $color }}; " class="flex align-center p-[6px] m-1 border border-neutral  mx-auto min-w-[300px] text-xs sm:min-w-[600px] sm:text-md "><span class="btn btn-xs px-1 border rounded bg-neutral text-white mix-blend-luminosity hover:bg-neutral cursor-default sm:btn-sm">{{ $color }} </span><button class="ml-auto" onclick="copyToClipboard('{{ $color }}')"><img src="{{ asset('/icons/copy.svg') }}" alt="Copy Icon" class="border bg-neutral p-1 rounded hover:bg-primary"></button></li>
+        @if (strlen($color) < 5) @php $color=expandHexColor($color); @endphp @endif <li style="background-color: {{ $color }}; " class="flex align-center p-[6px] m-1 border border-neutral  mx-auto min-w-[300px] text-xs sm:min-w-[600px] sm:text-md "><span class="btn btn-xs px-1 border rounded bg-neutral text-white mix-blend-luminosity hover:bg-neutral cursor-default sm:btn-sm">{{ $color }} </span><button class="ml-auto " onclick="copyToClipboard('{{ $color }}')"><img src="{{ asset('/icons/copy.svg') }}" alt="Copy Icon" class="border bg-neutral p-1 border-[3px] overflow-hidden rounded hover:bg-accent"></button></li>
             @endforeach
             @endisset
     </ul>
 </main>
 @endsection
+
+<div id="alert-copied" class="hidden toast toast-bottom toast-end toast-xs z-10 sm:toast-top sm:toast-center">
+    <div role="alert" class="alert text-center alert-success shadow shadow-2xl px-2 py-1 bg-green-400 font-bold border border-neutral border-4 alert-xs z-1 flex justify-center"><span>Copied to clipboard</span></div>
+</div>
 @section('scripts')
 <script>
     function copyToClipboard(text) {
         navigator.clipboard.writeText(text);
 
-        let alertCopied = document.getElementById("alert-copied");
-        alertCopied.style.display = "block";
+        document.getElementById("alert-copied").style.display = "block";
         setTimeout(() => {
-            alertCopied.style.display = "none";
+            document.getElementById("alert-copied").style.display = "none";
         }, 2000)
     }
 </script> @endsection

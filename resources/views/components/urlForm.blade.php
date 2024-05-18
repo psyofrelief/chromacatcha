@@ -13,8 +13,8 @@ $errorMessage = session('errorMessage');
         <span>{{$errorMessage}}</span>
     </div>
     @endisset
-    <input id="url" type="text" name="url" placeholder="https://www.example.com" class="input input-bordered text-xxs input-xs w-full max-w-sm sm:input-sm sm:text-xs" />
-    <button id="submitBtn" class="btn ml-1  btn-primary btn-xs max-w-[125px]  w-[125px]  hover:bg-accent sm:btn-sm " type="submit">
+    <input id="url" type="text" name="url" placeholder="https://www.example.com" class="input input-bordered border-4 text-xxs input-xs w-full max-w-sm sm:input-sm sm:text-xs" />
+    <button id="submitBtn" class="btn ml-1  border border-neutral border-4  btn-primary btn-xs max-w-[125px]  w-[125px]  hover:bg-accent sm:btn-sm " type="submit">
         <span id="spinner" class="loading loading-spinner loading-xs hidden"></span>
         <span class="extract">Extract</span>
     </button>
