@@ -24,14 +24,9 @@ $url = session('url');
 @endsection
 @section('scripts')
 <script>
-    // Add an event listener to the <p> tag
-    const submitBtn = document.getElementById('submit-colors');
-    if (submitBtn) {
-        submitBtn.addEventListener('click', function() {
-            // Submit the form when the <p> tag is clicked
+    document.getElementById('submit-colors').addEventListener('click', function() {
             document.getElementById('colors-form').submit();
         });
-    }
 </script>
 
 @endsection
