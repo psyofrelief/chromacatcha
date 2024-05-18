@@ -15,7 +15,7 @@
 
 <body class="min-h-screen flex flex-col relative text-center font-spaceMono">
 
-    <img alt="cloud bg" style="position: absolute; bottom: 0; width: 100%; z-index: -1;" src="{{ asset('/img/cloud-bg.svg')}}" />
+    <img alt="cloud bg" style="position: absolute; bottom: 0; width: 100%; z-index: -1;" src="{{ asset('images/cloud-bg.svg')}}" />
     <x-navbar />
 
     @yield('content')
