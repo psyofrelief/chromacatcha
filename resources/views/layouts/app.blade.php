@@ -9,13 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link href="{{ asset('/storage/app-18g5PMMB.css') }}" rel="stylesheet">
-    <script src="{{ asset('/storage/app-CTu84iEe.js') }}"></script>
+    <link href="{{ asset('build/assets/app-DPsmAb3R.css') }}" rel="stylesheet">
+    <script src="{{ asset('build/assets/app-BuF5rfZ9.js') }}"></script>
 </head>
 
 <body class="min-h-screen flex flex-col relative text-center font-spaceMono">
 
-    <img alt="cloud bg" style="position: absolute; bottom: 0; width: 100%; z-index: -1;" src="{{ asset('/storage/cloud-bg.svg')}}" />
+    <img alt="cloud bg" style="position: absolute; bottom: 0; width: 100%; z-index: -1;" src="{{ asset('build/assets//cloud-bg.svg')}}" />
     <x-navbar />
 
     @yield('content')
